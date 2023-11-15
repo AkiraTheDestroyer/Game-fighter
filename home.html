@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        /* header */
+        header {
+            height: 80px;
+            background-color: white;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            padding: 0 20px;
+        }
+        /* navbar */
+        nav a {
+            text-decoration: none;
+            color: black;
+            margin: 0 5px;
+            margin-left: 20px;
+        }
+
+        /* banner */
+        .main-banner{
+            background-color: darkturquoise;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center ;
+        }
+        /* main */
+        .container {
+            clear: both;
+        }
+
+        .container img{
+            width: 60%;
+
+        }
+        /* sidebar */
+        .sidebar {
+            float: left; 
+            width: 20%;  
+            background-color: whitesmoke;
+            padding: 20px;
+        }
+        .sidebar a {
+            text-decoration: none;
+            display: flex;
+            color: #000;
+        }
+
+        /* content */
+        main {
+            float: right; 
+            width: 1046px;   
+            height: 130px;
+            padding: 20px;
+            background-color: white;
+        }
+        footer {
+            clear: both; 
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- navbar -->
+        <nav>
+            <ul>
+                <a href="#">Beranda</a>
+                <a href="#">Layanan Kami</a>
+                <a href="#">Tentang kami</a>
+                <a href="#">Kontak kami</a>                
+            </ul>
+        </nav>
+    </header>
+
+    <!-- main banner -->
+    <div class="main-banner">
+        <h2> Selamat datang di Website kami</h2>
+    </div>
+
+    <!-- banner -->
+    <div class="container">
+        <!-- content -->
+        <main>
+            <img src="gambar biru.jpg" alt="gambar">
+            <h5>gambar yang sangat bagus </h5>
+        </main>
+        
+        <!-- side bar -->
+        <aside class="sidebar">
+            <ul>
+                <a href="#" class="register-link"><h3>Artikel</h3></a>
+                <a href="#" class="register-link"><h3>Bantuan</h3></a>
+                <a href="#" class="register-link"><h3>Kuesioner</h3></a>
+                <a href="#" class="register-link"><h3>Login</h3></a>
+                <a href="#" class="register-link"><h3>Register</h3></a>
+             </ul>
+        </aside>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 copyright by nabil.</p>
+    </footer>
+</body>
+</html>

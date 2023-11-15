@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        /* header */
+        header {
+            height: 80px;
+            background-color: white;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            padding: 0 20px;
+        }
+        /* navbar */
+        nav a {
+            text-decoration: none;
+            color: black;
+            margin: 0 5px;
+            margin-left: 20px;
+        }
+
+        /* banner */
+        .main-banner{
+            background-color: darkturquoise;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center ;
+        }
+        .container {
+            clear: both;
+        }
+
+        .container img{
+            width: 60%;
+
+        }
+        /* sidebar */
+        .sidebar {
+            float: left; 
+            width: 20%;  
+            background-color: whitesmoke;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .sidebar a {
+            text-decoration: none;
+            display: flex;
+            color: #000;
+        }
+
+        /* content */
+        main {
+            float: right; 
+            width: 1046px;   
+            height: 130px;
+            padding: 20px;
+            background-color: white;
+        }
+        
+        /* registrasi */
+        form {
+            font-size: 1.02rem;
+            line-height: 1.08rem;
+            letter-spacing: normal;
+            font-weight: 600;
+        }
+        input[type="text"], 
+        input[type="password"] , 
+        select textarea{
+            margin-bottom: 5px;
+            outline: none;
+            padding: 4px;
+        }
+        /* footer */
+        footer {
+            clear: both; 
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- navbar -->
+        <nav>
+            <ul>
+                <a href="#">Beranda</a>
+                <a href="#">Layanan Kami</a>
+                <a href="#">Tentang kami</a>
+                <a href="#">Kontak kami</a>                
+            </ul>
+        </nav>
+    </header>
+
+    <!-- main banner -->
+    <div class="main-banner">
+        <h2> Selamat datang di Website kami</h2>
+    </div>
+
+    <!-- banner -->
+    <div class="container">
+        <!-- content -->
+        <main>
+            <div class="Register" style="margin: 20px;">
+                <form action="#" method="post">
+                  <!-- Row 1: First Name, Last Name, Email -->
+                  <div style="margin-bottom: 15px;">
+                    <label for="first-name">Nama Depan:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                
+                    <label for="last-name" style="margin-left: 20px;">Nama Belakang:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                
+                    <label for="email" style="margin-left: 20px;">Alamat Email:</label>
+                    <input type="email" id="email" name="email" required>
+                  </div>
+                  <!-- Row 2: Username -->
+                  <div class="username" style="margin-bottom: 15px; width: 90%; display: flex;">
+                    <label for="username">Username:</label>
+                    <input style="width: 100%;" type="text" id="username" name="username" required>
+                  </div>
+                  <!-- Row 3: Password and Confirm Password -->
+                  <div style="margin-bottom: 15px;">
+                    <label for="password">Kata Sandi:</label>
+                    <input type="password" id="password" name="password" required>
+                
+                    <label for="confirm-password" style="margin-left: 20px;">Konfirmasi Kata Sandi:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                  </div>
+                  <!-- Row 4: Submit and Reset Buttons -->
+                  <div>
+                    <input type="reset" value="Reset Form" style="margin-right: 10px; border-radius: 10px; padding: 5px; background-color: #fff;">
+                    <input type="submit" value="Submit Form" style="margin-right: 10px; border-radius: 10px; padding: 5px; background-color: #fff;">
+                  </div>
+
+                </form>
+            </div>
+        </main>
+        
+        <!-- side bar -->
+        <aside class="sidebar">
+            <ul>
+                <a href="#" class="register-link"><h3>Artikel</h3></a>
+                <a href="#" class="register-link"><h3>Bantuan</h3></a>
+                <a href="#" class="register-link"><h3>Kuesioner</h3></a>
+                <a href="#" class="register-link"><h3>Login</h3></a>
+                <a href="#" class="register-link"><h3>Register</h3></a>
+             </ul>
+        </aside>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 copyright by nabil.</p>
+    </footer>
+</body>
+</html>
